@@ -6,17 +6,24 @@
   --Dark-Blue: hsl(213, 19%, 18%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
 }
+*{
+  box-sizing: border-box;
+}
 
 body {
-  background-color: var(--Dark-Blue);
-}
-.container {
+  background-color: var(--Very-Dark-Blue);
   display: flex;
   justify-content: center;
   align-items: center;
+  /* align-self: center; */
+  align-content: center;
+  height: 100vh;
 }
+
 .main {
   background-color: var(--Dark-Blue);
+  width: 20vw;
+  margin: 0 auto;
 }
 .text {
   color: var(--White);
