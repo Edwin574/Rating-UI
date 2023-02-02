@@ -79,3 +79,29 @@ body {
   border-radius:50px ;
   color: VAR(--White);
 }
+.submit:hover{
+  background-color: var(--White);
+}
+
+.thanks{
+  text-align: center;
+}
+.rating-detail{
+  background-color: var(--Dark-Blue);
+  box-shadow: 1px 1px 5px black;
+  color: var(--Orange);
+  border-radius: 50px;
+  height: 20px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  margin: 0 auto;
+}
+
+.value:hover{
+  background-color: var(--Light-Grey);
+}
+.value:active{
+  background-color:var(--Orange);
+}
