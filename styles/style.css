@@ -78,13 +78,16 @@ body {
   border: none;
   border-radius:50px ;
   color: VAR(--White);
+  cursor: pointer;
 }
 .submit:hover{
   background-color: var(--White);
+  color: var(--Orange);
 }
 
 .thanks{
   text-align: center;
+  display: none;
 }
 .rating-detail{
   background-color: var(--Dark-Blue);
@@ -101,7 +104,11 @@ body {
 
 .value:hover{
   background-color: var(--Light-Grey);
+  cursor: pointer;
 }
-.value:active{
+/* .value:active{
   background-color:var(--Orange);
+} */
+.value-clicked{
+  background-color: var(--Orange);
 }
