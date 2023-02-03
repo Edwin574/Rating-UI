@@ -9,6 +9,8 @@
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -16,8 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 100px; */
-  /* align-self: center; */
+  flex-wrap: nowrap;
   align-content: center;
   height: 100vh;
   font-family: var(--font);
@@ -25,14 +26,16 @@ body {
 
 .main {
   background-color: #252E37;
-  width: 25vw;
-  height: 60vh;
+  width: 50%;
+  /* height: 60vh; */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 5%;
   border-radius: 10%;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-evenly;
+  /* align-items: center; */
 }
 .header {
   color: var(--White);
@@ -64,10 +67,10 @@ body {
   background-color: #252E37;
   border-radius: 100%;
   box-shadow: 1px 1px var(--Very-Dark-Blue);
-  width: 40px;
-  height: 40px;
+  width: 10%;
+  height: 10%;
   text-align: center;
-  padding: 1px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,6 +82,8 @@ body {
   border-radius:50px ;
   color: VAR(--White);
   cursor: pointer;
+  margin: 5% 0;
+  width: 90%;
 }
 .submit:hover{
   background-color: var(--White);
@@ -99,9 +104,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center ;
-  margin: 0 auto;
+  margin: 5% auto;
 }
-
+.illustration-thanks{
+  margin-bottom: 10px;
+}
 .value:hover{
   background-color: var(--Light-Grey);
   cursor: pointer;
@@ -111,4 +118,18 @@ body {
 } */
 .value-clicked{
   background-color: var(--Orange);
+}
+@media screen and (max-width:768px){
+  .main{
+    width: 95%;
+    height: 70vh;
+    border-radius: 9%;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .main{
+    width: 40%;
+    height: 60vh;
+  }
 }

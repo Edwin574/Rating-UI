@@ -1,9 +1,12 @@
 const ratingButton=document.querySelectorAll(".value")
 const rateValue=document.getElementById("rate-value")
 const button=document.querySelector(".submit")
+const mainRating=document.querySelector('.main')
+const thankYou=document.querySelector('.thanks')
+
 console.log(ratingButton)
 
-let rating
+let rating=0
 
 ratingButton.forEach((element)=>{
     
@@ -17,4 +20,6 @@ ratingButton.forEach((element)=>{
 
 button.addEventListener('click',()=>{
 rateValue.innerHTML=rating
+mainRating.style.display='none'
+thankYou.style.display='block'
 })
